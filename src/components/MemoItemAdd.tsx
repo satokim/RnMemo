@@ -1,14 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, ViewStyle } from 'react-native'
 import React from 'react'
 
 interface Props {
-    children?: string
+    children?: JSX.Element
+    style?: ViewStyle
 }
 
 const MemoItemAdd = (props: Props) => {
-    const { children } = props
+    const { children, style } = props
     return (
-        <View style={styles.addBtn}>
+        <View style={[styles.addBtn, style]}>
             <Text style={styles.addTitle}>{children}</Text>
         </View>
     )
