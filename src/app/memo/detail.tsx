@@ -2,7 +2,6 @@ import { StyleSheet, Text, View, ScrollView } from 'react-native'
 import React from 'react'
 import Header from '../../components/Header'
 import MemoItemAdd from '../../components/MemoItemAdd'
-import { Feather } from '@expo/vector-icons'
 import Icon from '../../components/icon'
 
 const detail = () => {

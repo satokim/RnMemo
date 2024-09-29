@@ -1,4 +1,12 @@
-import { StyleSheet, Text, View, ViewStyle } from 'react-native'
+import { 
+    StyleSheet, 
+    Text,
+    View,
+    ViewStyle, 
+    TouchableOpacity,
+    Alert
+ } from 'react-native'
+
 import React from 'react'
 
 interface Props {
@@ -9,9 +17,9 @@ interface Props {
 const MemoItemAdd = (props: Props) => {
     const { children, style } = props
     return (
-        <View style={[styles.addBtn, style]}>
+        <TouchableOpacity onPress={()=>{Alert.alert('Add')}} style={[styles.addBtn, style]}>
             <Text style={styles.addTitle}>{children}</Text>
-        </View>
+        </TouchableOpacity>
     )
 }
 

@@ -4,14 +4,14 @@ import Header from '../../components/Header'
 import MemoItemAdd from '../../components/MemoItemAdd'
 import Icon from '../../components/icon'
 
-const edit = () => {
+const create = () => {
   return (
     <KeyboardAvoidingView behavior='height' style={styles.container}>
       
       <Header />
 
       <View style={styles.inputContainer}>
-        <TextInput multiline style={styles.input} value={'input\ninput\ninput\ninput\ninput\ninput\n'} />
+        <TextInput multiline style={styles.input} />
       </View>
       
       <MemoItemAdd>
@@ -22,7 +22,7 @@ const edit = () => {
   )
 }
 
-export default edit
+export default create
 
 const styles = StyleSheet.create({
   container: {
